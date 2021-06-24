@@ -4,7 +4,7 @@
 
 /*!
  * \file
- * \brief Ten plik zawiera definicję klasy Gora
+ * \brief Plik zawiera definicję klasy Gora
  */
 
 class gora : public brylageo
@@ -14,7 +14,7 @@ public:
 
     gora(){};
 
-    gora(PzG::LaczeDoGNUPlota &Lacze, vector3d PolBryly, double newKatOrientacji_st, vector3d newSkala) : brylageo(PolBryly, newKatOrientacji_st, newSkala)
+    gora(PzG::LaczeDoGNUPlota &Lacze, vector3d polozenie, double kat_orien, vector3d Skala) : brylageo(polozenie, kat_orien, Skala)
     {
         ZbudujGore();
         NazwaWyjsciowego = dajNazweWyjsciowego();
