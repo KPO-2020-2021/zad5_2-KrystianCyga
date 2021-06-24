@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/brylageo.cpp" "/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build/CMakeFiles/program.dir/src/brylageo.cpp.o"
   "/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/example.cpp" "/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build/CMakeFiles/program.dir/src/example.cpp.o"
   "/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/lacze_do_gnuplota.cpp" "/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build/CMakeFiles/program.dir/src/lacze_do_gnuplota.cpp.o"
+  "/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/prostopadloscian.cpp" "/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build/CMakeFiles/program.dir/src/prostopadloscian.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -96,9 +96,23 @@ CMakeFiles/program.dir/src/brylageo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/program.dir/src/brylageo.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/brylageo.cpp -o CMakeFiles/program.dir/src/brylageo.cpp.s
 
+CMakeFiles/program.dir/src/prostopadloscian.cpp.o: CMakeFiles/program.dir/flags.make
+CMakeFiles/program.dir/src/prostopadloscian.cpp.o: ../src/prostopadloscian.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/program.dir/src/prostopadloscian.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/program.dir/src/prostopadloscian.cpp.o -c /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/prostopadloscian.cpp
+
+CMakeFiles/program.dir/src/prostopadloscian.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/program.dir/src/prostopadloscian.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/prostopadloscian.cpp > CMakeFiles/program.dir/src/prostopadloscian.cpp.i
+
+CMakeFiles/program.dir/src/prostopadloscian.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/program.dir/src/prostopadloscian.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/prostopadloscian.cpp -o CMakeFiles/program.dir/src/prostopadloscian.cpp.s
+
 program: CMakeFiles/program.dir/src/example.cpp.o
 program: CMakeFiles/program.dir/src/lacze_do_gnuplota.cpp.o
 program: CMakeFiles/program.dir/src/brylageo.cpp.o
+program: CMakeFiles/program.dir/src/prostopadloscian.cpp.o
 program: CMakeFiles/program.dir/build.make
 
 .PHONY : program

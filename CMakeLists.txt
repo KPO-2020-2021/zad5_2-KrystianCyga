@@ -41,6 +41,7 @@ set(SOURCES          # All .cpp files in src/
     src/example.cpp
     src/lacze_do_gnuplota.cpp
     src/brylageo.cpp
+    src/prostopadloscian.cpp
 )
 set(TESTFILES        # All .cpp files in tests/
     tests/main.cpp

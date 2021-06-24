@@ -1,11 +1,9 @@
 #include "../inc/brylageo.hh"
-#define ILOSC_WIERZ_LINII_TWORZACEJ 4
 
 #define FOLDER_WLASCIWY "BrylyWzorcowe/"
 #define FOLDER_ROBOCZY "datasets/"
 #define WZORZEC_SZESCIAN "BrylyWzorcowe/szescian.dat"
 #define WZORZEC_ROTOR "BrylyWzorcowe/graniastoslup6.dat"
-#define LICZBA_ROTOROW 4
 
 #include <fstream>
 

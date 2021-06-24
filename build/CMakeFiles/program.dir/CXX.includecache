@@ -42,6 +42,18 @@ vector
 vector.hh
 /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/inc/vector.hh
 
+/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/inc/prostopadloscian.hh
+string
+-
+list
+-
+vector
+-
+iostream
+-
+brylageo.hh
+/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/inc/brylageo.hh
+
 /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/inc/vector.hh
 iostream
 -
@@ -69,4 +81,8 @@ list
 /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/inc/brylageo.hh
 fstream
 -
+
+/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/prostopadloscian.cpp
+../inc/prostopadloscian.hh
+/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/inc/prostopadloscian.hh
 

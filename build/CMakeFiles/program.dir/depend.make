@@ -16,3 +16,12 @@ CMakeFiles/program.dir/src/example.cpp.o: ../tests/doctest/doctest.h
 CMakeFiles/program.dir/src/lacze_do_gnuplota.cpp.o: ../inc/lacze_do_gnuplota.hh
 CMakeFiles/program.dir/src/lacze_do_gnuplota.cpp.o: ../src/lacze_do_gnuplota.cpp
 
+CMakeFiles/program.dir/src/prostopadloscian.cpp.o: ../inc/Obiekt.hh
+CMakeFiles/program.dir/src/prostopadloscian.cpp.o: ../inc/Vector3d.hh
+CMakeFiles/program.dir/src/prostopadloscian.cpp.o: ../inc/brylageo.hh
+CMakeFiles/program.dir/src/prostopadloscian.cpp.o: ../inc/lacze_do_gnuplota.hh
+CMakeFiles/program.dir/src/prostopadloscian.cpp.o: ../inc/matrix.hh
+CMakeFiles/program.dir/src/prostopadloscian.cpp.o: ../inc/prostopadloscian.hh
+CMakeFiles/program.dir/src/prostopadloscian.cpp.o: ../inc/vector.hh
+CMakeFiles/program.dir/src/prostopadloscian.cpp.o: ../src/prostopadloscian.cpp
+

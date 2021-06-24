@@ -671,6 +671,33 @@ src/lacze_do_gnuplota.cpp.s:
 	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/lacze_do_gnuplota.cpp.s
 .PHONY : src/lacze_do_gnuplota.cpp.s
 
+src/prostopadloscian.o: src/prostopadloscian.cpp.o
+
+.PHONY : src/prostopadloscian.o
+
+# target to build an object file
+src/prostopadloscian.cpp.o:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/prostopadloscian.cpp.o
+.PHONY : src/prostopadloscian.cpp.o
+
+src/prostopadloscian.i: src/prostopadloscian.cpp.i
+
+.PHONY : src/prostopadloscian.i
+
+# target to preprocess a source file
+src/prostopadloscian.cpp.i:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/prostopadloscian.cpp.i
+.PHONY : src/prostopadloscian.cpp.i
+
+src/prostopadloscian.s: src/prostopadloscian.cpp.s
+
+.PHONY : src/prostopadloscian.s
+
+# target to generate assembly for a file
+src/prostopadloscian.cpp.s:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/prostopadloscian.cpp.s
+.PHONY : src/prostopadloscian.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -726,6 +753,9 @@ help:
 	@echo "... src/lacze_do_gnuplota.o"
 	@echo "... src/lacze_do_gnuplota.i"
 	@echo "... src/lacze_do_gnuplota.s"
+	@echo "... src/prostopadloscian.o"
+	@echo "... src/prostopadloscian.i"
+	@echo "... src/prostopadloscian.s"
 .PHONY : help
 
 
