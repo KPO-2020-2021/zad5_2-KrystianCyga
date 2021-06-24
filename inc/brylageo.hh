@@ -35,7 +35,7 @@ brylageo();
  *      \param[in] skala -  skala z klasy brylageo
  *      \post Ustawia nazwy na odpowiednie podane przez uzytkownika
  */
-brylageo(vector3d polozenie,double kat,const vector3d skala);
+brylageo(vector3d polozenie,double kat,const vector3d skala2);
 /*!
  *  \brief Metoda zapisujaca skale                                            
  *                                                     
@@ -43,7 +43,7 @@ brylageo(vector3d polozenie,double kat,const vector3d skala);
  *                                                                        
  *     \post Zmiana skali na te podana przez uzytkownika                                
  */
-void skaluj(const vector3d &skala);
+void skaluj(vector3d &skala);
 /*!
  *  \brief Metoda zapisujaca nazwe pliku wzorcowego bryly                                            
  *                                                                    
@@ -63,6 +63,14 @@ void pobierz_nazwe_final(const std::string &nazwa2);
 
 bool wczytajbryle();
 bool zapiszbryle();
+/*!
+ * \brief Dokonuje rotacji wzgledem OZ
+ *
+ * Przeksztalca \p x i \p y dokonujac obrot o zadany kat.
+ * 
+ * \param[in] KatObrotu_st - kat obrotu
+ * \param[in,out] Polozenie - wspolrzedne punktu
+ */
 void ObrocWzgledemOsiOZ(double KatObrotu_st, vector3d &Polozenie);
 void TransformujWspolrzednePunktu(vector3d &Polozenie);
 
