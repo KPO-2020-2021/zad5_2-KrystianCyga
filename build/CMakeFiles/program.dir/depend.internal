@@ -13,6 +13,15 @@ CMakeFiles/program.dir/src/example.cpp.o
  ../inc/example.h
  /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/example.cpp
  /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/tests/doctest/doctest.h
+CMakeFiles/program.dir/src/graniastoslup.cpp.o
+ /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/inc/Obiekt.hh
+ /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/inc/Vector3d.hh
+ /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/inc/brylageo.hh
+ /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/inc/graniastoslup.hh
+ /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/inc/lacze_do_gnuplota.hh
+ /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/inc/matrix.hh
+ /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/inc/vector.hh
+ /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/graniastoslup.cpp
 CMakeFiles/program.dir/src/lacze_do_gnuplota.cpp.o
  ../inc/lacze_do_gnuplota.hh
  /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/lacze_do_gnuplota.cpp

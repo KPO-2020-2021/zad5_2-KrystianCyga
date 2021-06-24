@@ -30,6 +30,10 @@ lacze_do_gnuplota.hh
 fstream
 -
 
+/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/inc/graniastoslup.hh
+brylageo.hh
+/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/inc/brylageo.hh
+
 /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/inc/lacze_do_gnuplota.hh
 string
 -
@@ -41,18 +45,6 @@ vector
 /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/inc/matrix.hh
 vector.hh
 /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/inc/vector.hh
-
-/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/inc/prostopadloscian.hh
-string
--
-list
--
-vector
--
-iostream
--
-brylageo.hh
-/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/inc/brylageo.hh
 
 /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/inc/vector.hh
 iostream
@@ -76,13 +68,7 @@ vector
 list
 -
 
-/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/brylageo.cpp
-../inc/brylageo.hh
-/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/inc/brylageo.hh
-fstream
--
-
-/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/prostopadloscian.cpp
-../inc/prostopadloscian.hh
-/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/inc/prostopadloscian.hh
+/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/graniastoslup.cpp
+../inc/graniastoslup.hh
+/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/inc/graniastoslup.hh
 

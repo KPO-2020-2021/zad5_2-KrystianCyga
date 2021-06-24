@@ -93,7 +93,8 @@ unit_tests_EXTERNAL_OBJECTS = \
 "/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build/CMakeFiles/program.dir/src/example.cpp.o" \
 "/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build/CMakeFiles/program.dir/src/lacze_do_gnuplota.cpp.o" \
 "/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build/CMakeFiles/program.dir/src/brylageo.cpp.o" \
-"/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build/CMakeFiles/program.dir/src/prostopadloscian.cpp.o"
+"/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build/CMakeFiles/program.dir/src/prostopadloscian.cpp.o" \
+"/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build/CMakeFiles/program.dir/src/graniastoslup.cpp.o"
 
 unit_tests: tests/CMakeFiles/unit_tests.dir/main.cpp.o
 unit_tests: tests/CMakeFiles/unit_tests.dir/dummy.cpp.o
@@ -101,6 +102,7 @@ unit_tests: CMakeFiles/program.dir/src/example.cpp.o
 unit_tests: CMakeFiles/program.dir/src/lacze_do_gnuplota.cpp.o
 unit_tests: CMakeFiles/program.dir/src/brylageo.cpp.o
 unit_tests: CMakeFiles/program.dir/src/prostopadloscian.cpp.o
+unit_tests: CMakeFiles/program.dir/src/graniastoslup.cpp.o
 unit_tests: tests/CMakeFiles/unit_tests.dir/build.make
 unit_tests: tests/CMakeFiles/unit_tests.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../unit_tests"

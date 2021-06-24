@@ -13,6 +13,15 @@ CMakeFiles/program.dir/src/example.cpp.o: ../inc/example.h
 CMakeFiles/program.dir/src/example.cpp.o: ../src/example.cpp
 CMakeFiles/program.dir/src/example.cpp.o: ../tests/doctest/doctest.h
 
+CMakeFiles/program.dir/src/graniastoslup.cpp.o: ../inc/Obiekt.hh
+CMakeFiles/program.dir/src/graniastoslup.cpp.o: ../inc/Vector3d.hh
+CMakeFiles/program.dir/src/graniastoslup.cpp.o: ../inc/brylageo.hh
+CMakeFiles/program.dir/src/graniastoslup.cpp.o: ../inc/graniastoslup.hh
+CMakeFiles/program.dir/src/graniastoslup.cpp.o: ../inc/lacze_do_gnuplota.hh
+CMakeFiles/program.dir/src/graniastoslup.cpp.o: ../inc/matrix.hh
+CMakeFiles/program.dir/src/graniastoslup.cpp.o: ../inc/vector.hh
+CMakeFiles/program.dir/src/graniastoslup.cpp.o: ../src/graniastoslup.cpp
+
 CMakeFiles/program.dir/src/lacze_do_gnuplota.cpp.o: ../inc/lacze_do_gnuplota.hh
 CMakeFiles/program.dir/src/lacze_do_gnuplota.cpp.o: ../src/lacze_do_gnuplota.cpp
 

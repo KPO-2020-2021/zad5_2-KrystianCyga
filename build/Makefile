@@ -644,6 +644,33 @@ src/example.cpp.s:
 	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/example.cpp.s
 .PHONY : src/example.cpp.s
 
+src/graniastoslup.o: src/graniastoslup.cpp.o
+
+.PHONY : src/graniastoslup.o
+
+# target to build an object file
+src/graniastoslup.cpp.o:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/graniastoslup.cpp.o
+.PHONY : src/graniastoslup.cpp.o
+
+src/graniastoslup.i: src/graniastoslup.cpp.i
+
+.PHONY : src/graniastoslup.i
+
+# target to preprocess a source file
+src/graniastoslup.cpp.i:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/graniastoslup.cpp.i
+.PHONY : src/graniastoslup.cpp.i
+
+src/graniastoslup.s: src/graniastoslup.cpp.s
+
+.PHONY : src/graniastoslup.s
+
+# target to generate assembly for a file
+src/graniastoslup.cpp.s:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/graniastoslup.cpp.s
+.PHONY : src/graniastoslup.cpp.s
+
 src/lacze_do_gnuplota.o: src/lacze_do_gnuplota.cpp.o
 
 .PHONY : src/lacze_do_gnuplota.o
@@ -750,6 +777,9 @@ help:
 	@echo "... src/example.o"
 	@echo "... src/example.i"
 	@echo "... src/example.s"
+	@echo "... src/graniastoslup.o"
+	@echo "... src/graniastoslup.i"
+	@echo "... src/graniastoslup.s"
 	@echo "... src/lacze_do_gnuplota.o"
 	@echo "... src/lacze_do_gnuplota.i"
 	@echo "... src/lacze_do_gnuplota.s"
