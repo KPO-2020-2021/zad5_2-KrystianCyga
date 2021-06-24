@@ -41,7 +41,7 @@ void brylageo::ObrocWzgledemOsiOZ(double kat, vector3d &Polozenie)
 void brylageo::TransformujWspolrzednePunktu(vector3d &Polozenie){
   vector3d wynik;
   ObrocWzgledemOsiOZ(Orientacji_stopnie, Polozenie);
-  Skaluj(Polozenie);
+  skaluj(Polozenie);
   wynik = Polozenie + trans;
   Polozenie = wynik;
 }
@@ -78,5 +78,37 @@ bool brylageo::wczytajbryle(){
 }
 
 bool brylageo::zapiszbryle(){
+  skala[0] = 1;
+  skala[1] = 1;
+  skala[2] = 1;
+  std::ofstream PLIK(NazwaWyjsciowego);
 
+  if (!PLIK.is_open())
+  {
+    std::cerr << std::endl
+         << " Blad otwarcia do odczytu pliku: " << NazwaWyjsciowego << std::endl
+         << std::endl;
+    return false;
+  }
+
+  vector3d PoTrans;
+  int index = 0;
+  {
+
+    for (unsigned int nrWierz = 0; nrWierz < NumerWierzcholka;
+         ++nrWierz)
+    {
+      PoTrans = wierzcholki[nrWierz];
+      TransformujWspolrzednePunktu(PoTrans);
+      PLIK << std::fixed << PoTrans << std::endl;
+      ++index;
+      if (index == 4)
+      {
+        index = 0;
+        PLIK << std::endl;
+      }
+    }
+    PLIK << std::endl;
+  }
+  return !PLIK.fail();
 }

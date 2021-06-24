@@ -590,6 +590,33 @@ app/main.cpp.s:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/app/main.cpp.s
 .PHONY : app/main.cpp.s
 
+src/brylageo.o: src/brylageo.cpp.o
+
+.PHONY : src/brylageo.o
+
+# target to build an object file
+src/brylageo.cpp.o:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/brylageo.cpp.o
+.PHONY : src/brylageo.cpp.o
+
+src/brylageo.i: src/brylageo.cpp.i
+
+.PHONY : src/brylageo.i
+
+# target to preprocess a source file
+src/brylageo.cpp.i:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/brylageo.cpp.i
+.PHONY : src/brylageo.cpp.i
+
+src/brylageo.s: src/brylageo.cpp.s
+
+.PHONY : src/brylageo.s
+
+# target to generate assembly for a file
+src/brylageo.cpp.s:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/brylageo.cpp.s
+.PHONY : src/brylageo.cpp.s
+
 src/example.o: src/example.cpp.o
 
 .PHONY : src/example.o
@@ -690,6 +717,9 @@ help:
 	@echo "... app/main.o"
 	@echo "... app/main.i"
 	@echo "... app/main.s"
+	@echo "... src/brylageo.o"
+	@echo "... src/brylageo.i"
+	@echo "... src/brylageo.s"
 	@echo "... src/example.o"
 	@echo "... src/example.i"
 	@echo "... src/example.s"

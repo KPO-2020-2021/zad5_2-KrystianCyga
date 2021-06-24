@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/program.dir/src/brylageo.cpp.o"
   "CMakeFiles/program.dir/src/example.cpp.o"
   "CMakeFiles/program.dir/src/lacze_do_gnuplota.cpp.o"
 )
