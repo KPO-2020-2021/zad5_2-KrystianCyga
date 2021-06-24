@@ -752,6 +752,33 @@ src/prostopadloscian.cpp.s:
 	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/prostopadloscian.cpp.s
 .PHONY : src/prostopadloscian.cpp.s
 
+src/stozek.o: src/stozek.cpp.o
+
+.PHONY : src/stozek.o
+
+# target to build an object file
+src/stozek.cpp.o:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/stozek.cpp.o
+.PHONY : src/stozek.cpp.o
+
+src/stozek.i: src/stozek.cpp.i
+
+.PHONY : src/stozek.i
+
+# target to preprocess a source file
+src/stozek.cpp.i:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/stozek.cpp.i
+.PHONY : src/stozek.cpp.i
+
+src/stozek.s: src/stozek.cpp.s
+
+.PHONY : src/stozek.s
+
+# target to generate assembly for a file
+src/stozek.cpp.s:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/stozek.cpp.s
+.PHONY : src/stozek.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -816,6 +843,9 @@ help:
 	@echo "... src/prostopadloscian.o"
 	@echo "... src/prostopadloscian.i"
 	@echo "... src/prostopadloscian.s"
+	@echo "... src/stozek.o"
+	@echo "... src/stozek.i"
+	@echo "... src/stozek.s"
 .PHONY : help
 
 

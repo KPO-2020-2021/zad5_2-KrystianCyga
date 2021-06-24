@@ -30,22 +30,6 @@ lacze_do_gnuplota.hh
 fstream
 -
 
-/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/inc/dron.hh
-graniastoslup.hh
-/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/inc/graniastoslup.hh
-prostopadloscian.hh
-/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/inc/prostopadloscian.hh
-lacze_do_gnuplota.hh
-/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/inc/lacze_do_gnuplota.hh
-Obiekt.hh
-/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/inc/Obiekt.hh
-string
--
-
-/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/inc/graniastoslup.hh
-brylageo.hh
-/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/inc/brylageo.hh
-
 /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/inc/lacze_do_gnuplota.hh
 string
 -
@@ -58,15 +42,7 @@ vector
 vector.hh
 /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/inc/vector.hh
 
-/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/inc/prostopadloscian.hh
-string
--
-list
--
-vector
--
-iostream
--
+/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/inc/stozek.hh
 brylageo.hh
 /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/inc/brylageo.hh
 
@@ -92,7 +68,7 @@ vector
 list
 -
 
-/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/dron.cpp
-../inc/dron.hh
-/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/inc/dron.hh
+/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/stozek.cpp
+../inc/stozek.hh
+/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/inc/stozek.hh
 

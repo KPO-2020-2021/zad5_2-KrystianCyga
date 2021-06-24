@@ -45,3 +45,12 @@ CMakeFiles/program.dir/src/prostopadloscian.cpp.o: ../inc/prostopadloscian.hh
 CMakeFiles/program.dir/src/prostopadloscian.cpp.o: ../inc/vector.hh
 CMakeFiles/program.dir/src/prostopadloscian.cpp.o: ../src/prostopadloscian.cpp
 
+CMakeFiles/program.dir/src/stozek.cpp.o: ../inc/Obiekt.hh
+CMakeFiles/program.dir/src/stozek.cpp.o: ../inc/Vector3d.hh
+CMakeFiles/program.dir/src/stozek.cpp.o: ../inc/brylageo.hh
+CMakeFiles/program.dir/src/stozek.cpp.o: ../inc/lacze_do_gnuplota.hh
+CMakeFiles/program.dir/src/stozek.cpp.o: ../inc/matrix.hh
+CMakeFiles/program.dir/src/stozek.cpp.o: ../inc/stozek.hh
+CMakeFiles/program.dir/src/stozek.cpp.o: ../inc/vector.hh
+CMakeFiles/program.dir/src/stozek.cpp.o: ../src/stozek.cpp
+

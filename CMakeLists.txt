@@ -44,6 +44,7 @@ set(SOURCES          # All .cpp files in src/
     src/prostopadloscian.cpp
     src/graniastoslup.cpp
     src/dron.cpp
+    src/stozek.cpp
 )
 set(TESTFILES        # All .cpp files in tests/
     tests/main.cpp
