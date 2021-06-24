@@ -42,7 +42,7 @@ CMakeFiles/program.dir/src/graniastoslup.cpp.o: ../inc/matrix.hh
 CMakeFiles/program.dir/src/graniastoslup.cpp.o: ../inc/vector.hh
 CMakeFiles/program.dir/src/graniastoslup.cpp.o: ../src/graniastoslup.cpp
 
-CMakeFiles/program.dir/src/lacze_do_gnuplota.cpp.o: ../inc/lacze_do_gnuplota.hh
+CMakeFiles/program.dir/src/lacze_do_gnuplota.cpp.o: ../inc/lacze_do_gnuplota.hpp
 CMakeFiles/program.dir/src/lacze_do_gnuplota.cpp.o: ../src/lacze_do_gnuplota.cpp
 
 CMakeFiles/program.dir/src/prostopadloscian.cpp.o: ../inc/Obiekt.hh

@@ -43,7 +43,7 @@ CMakeFiles/program.dir/src/graniastoslup.cpp.o
  /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/inc/vector.hh
  /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/graniastoslup.cpp
 CMakeFiles/program.dir/src/lacze_do_gnuplota.cpp.o
- ../inc/lacze_do_gnuplota.hh
+ /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/inc/lacze_do_gnuplota.hpp
  /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/lacze_do_gnuplota.cpp
 CMakeFiles/program.dir/src/prostopadloscian.cpp.o
  /home/krystian/Documents/objektowo/zad5_2-KrystianCyga/inc/Obiekt.hh

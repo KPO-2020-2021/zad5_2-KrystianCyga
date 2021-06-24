@@ -47,6 +47,8 @@ set(SOURCES          # All .cpp files in src/
     src/stozek.cpp
     src/gran_bryla.cpp
     src/wyzyna.cpp
+    src/scena.cpp
+
 )
 set(TESTFILES        # All .cpp files in tests/
     tests/main.cpp

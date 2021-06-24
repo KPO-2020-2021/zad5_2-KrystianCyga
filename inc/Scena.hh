@@ -62,7 +62,7 @@ public:
  * \retval  0 - operacja powiodla sie
  * \retval  1 - koniec programu
  */
-  int  uzyj_drona(PzG::LaczeDoGNUPlota &Lacze);
+  int  Menu(PzG::LaczeDoGNUPlota &Lacze);
   /*!
  * \brief Pozwala na dodanie przeszkody
  *
