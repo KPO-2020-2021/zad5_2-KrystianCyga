@@ -4,6 +4,7 @@
 #include "prostopadloscian.hh"
 #include "lacze_do_gnuplota.hh"
 #include "Obiekt.hh"
+#include "brylageo.hh"
 #include <string>
 
 /*!
