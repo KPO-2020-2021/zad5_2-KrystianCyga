@@ -9,6 +9,17 @@ CMakeFiles/program.dir/src/brylageo.cpp.o: ../inc/matrix.hh
 CMakeFiles/program.dir/src/brylageo.cpp.o: ../inc/vector.hh
 CMakeFiles/program.dir/src/brylageo.cpp.o: ../src/brylageo.cpp
 
+CMakeFiles/program.dir/src/dron.cpp.o: ../inc/Obiekt.hh
+CMakeFiles/program.dir/src/dron.cpp.o: ../inc/Vector3d.hh
+CMakeFiles/program.dir/src/dron.cpp.o: ../inc/brylageo.hh
+CMakeFiles/program.dir/src/dron.cpp.o: ../inc/dron.hh
+CMakeFiles/program.dir/src/dron.cpp.o: ../inc/graniastoslup.hh
+CMakeFiles/program.dir/src/dron.cpp.o: ../inc/lacze_do_gnuplota.hh
+CMakeFiles/program.dir/src/dron.cpp.o: ../inc/matrix.hh
+CMakeFiles/program.dir/src/dron.cpp.o: ../inc/prostopadloscian.hh
+CMakeFiles/program.dir/src/dron.cpp.o: ../inc/vector.hh
+CMakeFiles/program.dir/src/dron.cpp.o: ../src/dron.cpp
+
 CMakeFiles/program.dir/src/example.cpp.o: ../inc/example.h
 CMakeFiles/program.dir/src/example.cpp.o: ../src/example.cpp
 CMakeFiles/program.dir/src/example.cpp.o: ../tests/doctest/doctest.h

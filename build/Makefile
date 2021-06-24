@@ -617,6 +617,33 @@ src/brylageo.cpp.s:
 	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/brylageo.cpp.s
 .PHONY : src/brylageo.cpp.s
 
+src/dron.o: src/dron.cpp.o
+
+.PHONY : src/dron.o
+
+# target to build an object file
+src/dron.cpp.o:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/dron.cpp.o
+.PHONY : src/dron.cpp.o
+
+src/dron.i: src/dron.cpp.i
+
+.PHONY : src/dron.i
+
+# target to preprocess a source file
+src/dron.cpp.i:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/dron.cpp.i
+.PHONY : src/dron.cpp.i
+
+src/dron.s: src/dron.cpp.s
+
+.PHONY : src/dron.s
+
+# target to generate assembly for a file
+src/dron.cpp.s:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/dron.cpp.s
+.PHONY : src/dron.cpp.s
+
 src/example.o: src/example.cpp.o
 
 .PHONY : src/example.o
@@ -774,6 +801,9 @@ help:
 	@echo "... src/brylageo.o"
 	@echo "... src/brylageo.i"
 	@echo "... src/brylageo.s"
+	@echo "... src/dron.o"
+	@echo "... src/dron.i"
+	@echo "... src/dron.s"
 	@echo "... src/example.o"
 	@echo "... src/example.i"
 	@echo "... src/example.s"

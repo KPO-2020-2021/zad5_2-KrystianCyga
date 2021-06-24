@@ -21,6 +21,15 @@ brylageo::brylageo(vector3d polozenie, double kat, const vector3d skala2)
     Orientacji_stopnie = kat;
 }
 
+void brylageo::pobierz_nazwe_wzorca(const std::string &nazwa1){
+    NazwaWzorcowego=nazwa1;
+}
+
+void brylageo::pobierz_nazwe_final(const std::string &nazwa2){
+    NazwaWyjsciowego=nazwa2;
+}
+
+
 void brylageo::skaluj(vector3d &skala2)
 {
     skala2[0] *= skala[0];

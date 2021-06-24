@@ -43,6 +43,7 @@ set(SOURCES          # All .cpp files in src/
     src/brylageo.cpp
     src/prostopadloscian.cpp
     src/graniastoslup.cpp
+    src/dron.cpp
 )
 set(TESTFILES        # All .cpp files in tests/
     tests/main.cpp
