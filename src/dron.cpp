@@ -76,3 +76,107 @@ bool Dron::owektor(unsigned int numer_drona)
   return true;
 }
 
+bool Dron::ZapiszTrase(int wysokosc, unsigned int odleglosc, double kat, PzG::LaczeDoGNUPlota &Lacze)
+{
+  std::ofstream out(TRASA_PRZELOTU);
+  if (!out.is_open())
+  {
+    std::cerr << std::endl
+              << " Nie mozna otworzyc do zapisu pliku: " << TRASA_PRZELOTU << std::endl
+              << std::endl;
+    return false;
+  }
+
+  vector3d end_Polozenie;
+  vector3d Polozenie = daj_polozenie();
+  double Kat_rad;
+  Kat_rad = kat * M_PI / 360;
+  end_Polozenie[0] += cos(Kat_rad) * odleglosc;
+  end_Polozenie[1] += sin(Kat_rad) * odleglosc;
+  end_Polozenie[2] = wysokosc;
+  end_Polozenie = end_Polozenie + daj_polozenie();
+
+  out << Polozenie << std::endl;
+  Polozenie[2] = wysokosc;
+  out << Polozenie << std::endl << end_Polozenie << std::endl;
+  end_Polozenie[2] = 0;
+  out << end_Polozenie << std::endl;
+
+  Lacze.DodajNazwePliku(TRASA_PRZELOTU);
+  return !out.fail();
+}
+
+bool Dron::LotDrona(double kat, int Wysokosc, int odleglosc, unsigned int numer_drona, PzG::LaczeDoGNUPlota &Lacze){
+  ZapiszTrase(Wysokosc, odleglosc, kat, Lacze);
+  double pochylenie = 0;
+
+  std::cout << std::endl << "Wznoszenie Trwa... " << std::endl;
+
+  Lacze.Rysuj();
+  usleep(1000000); 
+  for (; PolozenieD[2] <= Wysokosc; PolozenieD[2] += 2)
+  {
+    if (!owektor(numer_drona))
+      return false;
+    usleep(50000); 
+    Lacze.Rysuj();
+  }
+  PolozenieD[2] -= 2;
+
+  std::cout << "Zmiana orientacji Trwa... " << std::endl;
+  for (; Orientacja_drona < kat; Orientacja_drona += 5)
+  {
+    if (!owektor(numer_drona))
+      return false;
+    usleep(50000);
+    Lacze.Rysuj();
+  }
+
+  std::cout << "Lot do przodu Trwa... " << std::endl;
+  double OdlegloscPrzebyta = 0;
+  vector3d KorekcjaPolozenia = PolozenieD;
+  double KorekcjaKata = kat;
+  for (; OdlegloscPrzebyta <= odleglosc; OdlegloscPrzebyta += odleglosc / 20)
+  {
+    LotDoPrzodu(kat, odleglosc / 20);
+    if (!owektor(numer_drona))
+      return false;
+    pochylenie += 4;
+    if (pochylenie == 50)
+      pochylenie -= 4;
+    if (OdlegloscPrzebyta > 15 * odleglosc / 20)
+      pochylenie -= 4;
+    usleep(50000);
+    Lacze.Rysuj();
+  }
+  Popraw_Pozycje(KorekcjaPolozenia, KorekcjaKata, odleglosc);
+
+  std::cout << "Opadanie trwa... " << std::endl;
+  for (; PolozenieD[2] >= 0; PolozenieD[2] -= 2)
+  {
+    if (!owektor(numer_drona))
+      return false;
+    usleep(50000);
+    Lacze.Rysuj();
+  }
+  PolozenieD[2] = 0;
+  Lacze.Rysuj();
+  Ustaw_kat(kat);
+
+  return true;
+}
+
+void Dron::LotDoPrzodu(double kat, double odleglosc){
+  double kat_rad;
+  kat_rad = kat*M_PI/360;
+  PolozenieD[0] += cos(kat_rad) * odleglosc;
+  PolozenieD[1] += sin(kat_rad) * odleglosc;
+}
+
+void Dron::Popraw_Pozycje(vector3d VekTrans, double kat, double odleglosc){
+  double kat_rad;
+  PolozenieD = VekTrans;
+  kat_rad = kat*M_PI/360;
+  PolozenieD[0] += cos(kat_rad) * odleglosc;
+  PolozenieD[1] += sin(kat_rad) * odleglosc;
+}
