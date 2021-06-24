@@ -7,6 +7,8 @@
 #define WZORZEC_ROTOR "BrylyWzorcowe/graniastoslup6.dat"
 #define LICZBA_ROTOROW 4
 
+#include <fstream>
+
 brylageo::brylageo(){
     skala[0] = 1;
     skala[1] = 1;
@@ -34,4 +36,47 @@ void brylageo::ObrocWzgledemOsiOZ(double kat, vector3d &Polozenie)
   wynik[1] = Polozenie[0] * sin(rad) + Polozenie[1] * cos(rad);
   Polozenie[0] = wynik[0];
   Polozenie[1] = wynik[1];
+}
+
+void brylageo::TransformujWspolrzednePunktu(vector3d &Polozenie){
+  vector3d wynik;
+  ObrocWzgledemOsiOZ(Orientacji_stopnie, Polozenie);
+  Skaluj(Polozenie);
+  wynik = Polozenie + trans;
+  Polozenie = wynik;
+}
+
+bool brylageo::wczytajbryle(){
+
+  std::ifstream Plik_BrylaWzorcowa(NazwaWzorcowego);
+
+  if (!Plik_BrylaWzorcowa.is_open())
+  {
+    std::cerr << std::endl
+         << " Blad otwarcia do odczytu pliku: " << NazwaWzorcowego << std::endl
+         << std::endl;
+    return false;
+  }
+  vector3d PoTrans;
+  long unsigned int index = 0;
+  wierzcholki.reserve(17);
+
+  for (unsigned int nrWierz = 0; nrWierz < NumerWierzcholka;
+       ++nrWierz)
+  {
+    Plik_BrylaWzorcowa >> PoTrans;
+
+    TransformujWspolrzednePunktu(PoTrans);
+    ++index;
+    if (wierzcholki.size() < index)
+      wierzcholki.push_back(PoTrans);
+    else
+      wierzcholki[index] = PoTrans;
+  }
+  index = 0;
+  return true;
+}
+
+bool brylageo::zapiszbryle(){
+
 }

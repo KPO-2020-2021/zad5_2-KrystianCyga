@@ -4,6 +4,7 @@
 #include "matrix.hh"
 #include "Obiekt.hh"
 #include "lacze_do_gnuplota.hh"
+#include <fstream>
 
 
 class brylageo: public Obiekt
@@ -60,8 +61,20 @@ void pobierz_nazwe_wzorca(const std::string &nazwa1);
  *     \post Zmiana NazwaPlikubryluWzorc na ta podana przez uzytkownika                                
  */
 void pobierz_nazwe_final(const std::string &nazwa2);
-
+/*!
+ * \brief  Wczytuje bryle z pliku wzorcowego
+ *  Po wczytaniu dokonuje potrzebnej transformacji i skalowania
+ *
+ * \retval true - Operacja sie powiodla
+ * \retval false - Operacja sie nie powiodla
+ */
 bool wczytajbryle();
+/*!
+ * \brief Zapisuje bryle do pliku 
+ *
+ * \retval true - Operacja sie powiodla
+ * \retval false - Operacja sie nie powiodla
+ */
 bool zapiszbryle();
 /*!
  * \brief Dokonuje rotacji wzgledem OZ
@@ -72,8 +85,17 @@ bool zapiszbryle();
  * \param[in,out] Polozenie - wspolrzedne punktu
  */
 void ObrocWzgledemOsiOZ(double KatObrotu_st, vector3d &Polozenie);
+/*!
+ * \brief Transformuje i skaluje punkt
+ *
+ * \param[in,out]  Polozenie - wspolrzedne punktu transformacji
+ */
 void TransformujWspolrzednePunktu(vector3d &Polozenie);
-
+/*!
+ * \brief Skaluje wektor
+ *
+ * \param[in] Polozenie - wektor polozenia
+ */
 void Skaluj(vector3d &Polozenie);
 /*!
  *  \brief Metoda ustawiajaca kat orientacji                                           
