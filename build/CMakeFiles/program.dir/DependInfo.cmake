@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/graniastoslup.cpp" "/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build/CMakeFiles/program.dir/src/graniastoslup.cpp.o"
   "/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/lacze_do_gnuplota.cpp" "/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build/CMakeFiles/program.dir/src/lacze_do_gnuplota.cpp.o"
   "/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/prostopadloscian.cpp" "/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build/CMakeFiles/program.dir/src/prostopadloscian.cpp.o"
+  "/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/scena.cpp" "/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build/CMakeFiles/program.dir/src/scena.cpp.o"
   "/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/stozek.cpp" "/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build/CMakeFiles/program.dir/src/stozek.cpp.o"
   "/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/src/wyzyna.cpp" "/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build/CMakeFiles/program.dir/src/wyzyna.cpp.o"
   )

@@ -6,6 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/program.dir/src/graniastoslup.cpp.o"
   "CMakeFiles/program.dir/src/lacze_do_gnuplota.cpp.o"
   "CMakeFiles/program.dir/src/prostopadloscian.cpp.o"
+  "CMakeFiles/program.dir/src/scena.cpp.o"
   "CMakeFiles/program.dir/src/stozek.cpp.o"
   "CMakeFiles/program.dir/src/wyzyna.cpp.o"
 )

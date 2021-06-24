@@ -84,7 +84,8 @@ main_EXTERNAL_OBJECTS = \
 "/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build/CMakeFiles/program.dir/src/dron.cpp.o" \
 "/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build/CMakeFiles/program.dir/src/stozek.cpp.o" \
 "/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build/CMakeFiles/program.dir/src/gran_bryla.cpp.o" \
-"/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build/CMakeFiles/program.dir/src/wyzyna.cpp.o"
+"/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build/CMakeFiles/program.dir/src/wyzyna.cpp.o" \
+"/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build/CMakeFiles/program.dir/src/scena.cpp.o"
 
 main: CMakeFiles/main.dir/app/main.cpp.o
 main: CMakeFiles/program.dir/src/example.cpp.o
@@ -96,6 +97,7 @@ main: CMakeFiles/program.dir/src/dron.cpp.o
 main: CMakeFiles/program.dir/src/stozek.cpp.o
 main: CMakeFiles/program.dir/src/gran_bryla.cpp.o
 main: CMakeFiles/program.dir/src/wyzyna.cpp.o
+main: CMakeFiles/program.dir/src/scena.cpp.o
 main: CMakeFiles/main.dir/build.make
 main: CMakeFiles/main.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/krystian/Documents/objektowo/zad5_2-KrystianCyga/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable main"

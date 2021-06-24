@@ -779,6 +779,33 @@ src/prostopadloscian.cpp.s:
 	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/prostopadloscian.cpp.s
 .PHONY : src/prostopadloscian.cpp.s
 
+src/scena.o: src/scena.cpp.o
+
+.PHONY : src/scena.o
+
+# target to build an object file
+src/scena.cpp.o:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/scena.cpp.o
+.PHONY : src/scena.cpp.o
+
+src/scena.i: src/scena.cpp.i
+
+.PHONY : src/scena.i
+
+# target to preprocess a source file
+src/scena.cpp.i:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/scena.cpp.i
+.PHONY : src/scena.cpp.i
+
+src/scena.s: src/scena.cpp.s
+
+.PHONY : src/scena.s
+
+# target to generate assembly for a file
+src/scena.cpp.s:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/scena.cpp.s
+.PHONY : src/scena.cpp.s
+
 src/stozek.o: src/stozek.cpp.o
 
 .PHONY : src/stozek.o
@@ -900,6 +927,9 @@ help:
 	@echo "... src/prostopadloscian.o"
 	@echo "... src/prostopadloscian.i"
 	@echo "... src/prostopadloscian.s"
+	@echo "... src/scena.o"
+	@echo "... src/scena.i"
+	@echo "... src/scena.s"
 	@echo "... src/stozek.o"
 	@echo "... src/stozek.i"
 	@echo "... src/stozek.s"
