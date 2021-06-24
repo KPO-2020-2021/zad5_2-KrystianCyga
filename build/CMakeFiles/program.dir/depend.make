@@ -24,6 +24,15 @@ CMakeFiles/program.dir/src/example.cpp.o: ../inc/example.h
 CMakeFiles/program.dir/src/example.cpp.o: ../src/example.cpp
 CMakeFiles/program.dir/src/example.cpp.o: ../tests/doctest/doctest.h
 
+CMakeFiles/program.dir/src/gran_bryla.cpp.o: ../inc/Obiekt.hh
+CMakeFiles/program.dir/src/gran_bryla.cpp.o: ../inc/Vector3d.hh
+CMakeFiles/program.dir/src/gran_bryla.cpp.o: ../inc/brylageo.hh
+CMakeFiles/program.dir/src/gran_bryla.cpp.o: ../inc/gran_bryla.hh
+CMakeFiles/program.dir/src/gran_bryla.cpp.o: ../inc/lacze_do_gnuplota.hh
+CMakeFiles/program.dir/src/gran_bryla.cpp.o: ../inc/matrix.hh
+CMakeFiles/program.dir/src/gran_bryla.cpp.o: ../inc/vector.hh
+CMakeFiles/program.dir/src/gran_bryla.cpp.o: ../src/gran_bryla.cpp
+
 CMakeFiles/program.dir/src/graniastoslup.cpp.o: ../inc/Obiekt.hh
 CMakeFiles/program.dir/src/graniastoslup.cpp.o: ../inc/Vector3d.hh
 CMakeFiles/program.dir/src/graniastoslup.cpp.o: ../inc/brylageo.hh
@@ -53,4 +62,13 @@ CMakeFiles/program.dir/src/stozek.cpp.o: ../inc/matrix.hh
 CMakeFiles/program.dir/src/stozek.cpp.o: ../inc/stozek.hh
 CMakeFiles/program.dir/src/stozek.cpp.o: ../inc/vector.hh
 CMakeFiles/program.dir/src/stozek.cpp.o: ../src/stozek.cpp
+
+CMakeFiles/program.dir/src/wyzyna.cpp.o: ../inc/Obiekt.hh
+CMakeFiles/program.dir/src/wyzyna.cpp.o: ../inc/Vector3d.hh
+CMakeFiles/program.dir/src/wyzyna.cpp.o: ../inc/brylageo.hh
+CMakeFiles/program.dir/src/wyzyna.cpp.o: ../inc/lacze_do_gnuplota.hh
+CMakeFiles/program.dir/src/wyzyna.cpp.o: ../inc/matrix.hh
+CMakeFiles/program.dir/src/wyzyna.cpp.o: ../inc/vector.hh
+CMakeFiles/program.dir/src/wyzyna.cpp.o: ../inc/wyzyna.hh
+CMakeFiles/program.dir/src/wyzyna.cpp.o: ../src/wyzyna.cpp
 

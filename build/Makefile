@@ -671,6 +671,33 @@ src/example.cpp.s:
 	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/example.cpp.s
 .PHONY : src/example.cpp.s
 
+src/gran_bryla.o: src/gran_bryla.cpp.o
+
+.PHONY : src/gran_bryla.o
+
+# target to build an object file
+src/gran_bryla.cpp.o:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/gran_bryla.cpp.o
+.PHONY : src/gran_bryla.cpp.o
+
+src/gran_bryla.i: src/gran_bryla.cpp.i
+
+.PHONY : src/gran_bryla.i
+
+# target to preprocess a source file
+src/gran_bryla.cpp.i:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/gran_bryla.cpp.i
+.PHONY : src/gran_bryla.cpp.i
+
+src/gran_bryla.s: src/gran_bryla.cpp.s
+
+.PHONY : src/gran_bryla.s
+
+# target to generate assembly for a file
+src/gran_bryla.cpp.s:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/gran_bryla.cpp.s
+.PHONY : src/gran_bryla.cpp.s
+
 src/graniastoslup.o: src/graniastoslup.cpp.o
 
 .PHONY : src/graniastoslup.o
@@ -779,6 +806,33 @@ src/stozek.cpp.s:
 	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/stozek.cpp.s
 .PHONY : src/stozek.cpp.s
 
+src/wyzyna.o: src/wyzyna.cpp.o
+
+.PHONY : src/wyzyna.o
+
+# target to build an object file
+src/wyzyna.cpp.o:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/wyzyna.cpp.o
+.PHONY : src/wyzyna.cpp.o
+
+src/wyzyna.i: src/wyzyna.cpp.i
+
+.PHONY : src/wyzyna.i
+
+# target to preprocess a source file
+src/wyzyna.cpp.i:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/wyzyna.cpp.i
+.PHONY : src/wyzyna.cpp.i
+
+src/wyzyna.s: src/wyzyna.cpp.s
+
+.PHONY : src/wyzyna.s
+
+# target to generate assembly for a file
+src/wyzyna.cpp.s:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/wyzyna.cpp.s
+.PHONY : src/wyzyna.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -834,6 +888,9 @@ help:
 	@echo "... src/example.o"
 	@echo "... src/example.i"
 	@echo "... src/example.s"
+	@echo "... src/gran_bryla.o"
+	@echo "... src/gran_bryla.i"
+	@echo "... src/gran_bryla.s"
 	@echo "... src/graniastoslup.o"
 	@echo "... src/graniastoslup.i"
 	@echo "... src/graniastoslup.s"
@@ -846,6 +903,9 @@ help:
 	@echo "... src/stozek.o"
 	@echo "... src/stozek.i"
 	@echo "... src/stozek.s"
+	@echo "... src/wyzyna.o"
+	@echo "... src/wyzyna.i"
+	@echo "... src/wyzyna.s"
 .PHONY : help
 
 

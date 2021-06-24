@@ -1,5 +1,5 @@
 #include "../inc/stozek.hh"
-#define WZORZEC_STOZEK "bryly_wzorcowe/szescian_na_powierzchni.dat"
+#define WZORZEC_STOZEK "BrylyWzorcowe/szescianUP.dat"
 #define FOLDER_ROBOCZY "datasets/"
 
 void stozek::InfoObiektu()

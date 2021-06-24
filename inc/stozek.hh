@@ -15,8 +15,6 @@ public:
      *
      * Przeksztalca i odpowiednio transformuje bryle 
      *
-     * \param[in] Trans - wektor translacji.
-     *
      * \retval true - Operacja sie powiodla
      * \retval false - Operacja sie nie powiodla    
      */
