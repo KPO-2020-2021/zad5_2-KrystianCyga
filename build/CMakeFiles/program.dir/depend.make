@@ -6,6 +6,7 @@ CMakeFiles/program.dir/src/brylageo.cpp.o: ../inc/Vector3d.hh
 CMakeFiles/program.dir/src/brylageo.cpp.o: ../inc/brylageo.hh
 CMakeFiles/program.dir/src/brylageo.cpp.o: ../inc/lacze_do_gnuplota.hh
 CMakeFiles/program.dir/src/brylageo.cpp.o: ../inc/matrix.hh
+CMakeFiles/program.dir/src/brylageo.cpp.o: ../inc/matrix3d.hh
 CMakeFiles/program.dir/src/brylageo.cpp.o: ../inc/vector.hh
 CMakeFiles/program.dir/src/brylageo.cpp.o: ../src/brylageo.cpp
 
@@ -16,6 +17,7 @@ CMakeFiles/program.dir/src/dron.cpp.o: ../inc/dron.hh
 CMakeFiles/program.dir/src/dron.cpp.o: ../inc/graniastoslup.hh
 CMakeFiles/program.dir/src/dron.cpp.o: ../inc/lacze_do_gnuplota.hh
 CMakeFiles/program.dir/src/dron.cpp.o: ../inc/matrix.hh
+CMakeFiles/program.dir/src/dron.cpp.o: ../inc/matrix3d.hh
 CMakeFiles/program.dir/src/dron.cpp.o: ../inc/prostopadloscian.hh
 CMakeFiles/program.dir/src/dron.cpp.o: ../inc/vector.hh
 CMakeFiles/program.dir/src/dron.cpp.o: ../src/dron.cpp
@@ -30,6 +32,7 @@ CMakeFiles/program.dir/src/gran_bryla.cpp.o: ../inc/brylageo.hh
 CMakeFiles/program.dir/src/gran_bryla.cpp.o: ../inc/gran_bryla.hh
 CMakeFiles/program.dir/src/gran_bryla.cpp.o: ../inc/lacze_do_gnuplota.hh
 CMakeFiles/program.dir/src/gran_bryla.cpp.o: ../inc/matrix.hh
+CMakeFiles/program.dir/src/gran_bryla.cpp.o: ../inc/matrix3d.hh
 CMakeFiles/program.dir/src/gran_bryla.cpp.o: ../inc/vector.hh
 CMakeFiles/program.dir/src/gran_bryla.cpp.o: ../src/gran_bryla.cpp
 
@@ -39,6 +42,7 @@ CMakeFiles/program.dir/src/graniastoslup.cpp.o: ../inc/brylageo.hh
 CMakeFiles/program.dir/src/graniastoslup.cpp.o: ../inc/graniastoslup.hh
 CMakeFiles/program.dir/src/graniastoslup.cpp.o: ../inc/lacze_do_gnuplota.hh
 CMakeFiles/program.dir/src/graniastoslup.cpp.o: ../inc/matrix.hh
+CMakeFiles/program.dir/src/graniastoslup.cpp.o: ../inc/matrix3d.hh
 CMakeFiles/program.dir/src/graniastoslup.cpp.o: ../inc/vector.hh
 CMakeFiles/program.dir/src/graniastoslup.cpp.o: ../src/graniastoslup.cpp
 
@@ -50,6 +54,7 @@ CMakeFiles/program.dir/src/prostopadloscian.cpp.o: ../inc/Vector3d.hh
 CMakeFiles/program.dir/src/prostopadloscian.cpp.o: ../inc/brylageo.hh
 CMakeFiles/program.dir/src/prostopadloscian.cpp.o: ../inc/lacze_do_gnuplota.hh
 CMakeFiles/program.dir/src/prostopadloscian.cpp.o: ../inc/matrix.hh
+CMakeFiles/program.dir/src/prostopadloscian.cpp.o: ../inc/matrix3d.hh
 CMakeFiles/program.dir/src/prostopadloscian.cpp.o: ../inc/prostopadloscian.hh
 CMakeFiles/program.dir/src/prostopadloscian.cpp.o: ../inc/vector.hh
 CMakeFiles/program.dir/src/prostopadloscian.cpp.o: ../src/prostopadloscian.cpp
@@ -63,6 +68,7 @@ CMakeFiles/program.dir/src/scena.cpp.o: ../inc/gran_bryla.hh
 CMakeFiles/program.dir/src/scena.cpp.o: ../inc/graniastoslup.hh
 CMakeFiles/program.dir/src/scena.cpp.o: ../inc/lacze_do_gnuplota.hh
 CMakeFiles/program.dir/src/scena.cpp.o: ../inc/matrix.hh
+CMakeFiles/program.dir/src/scena.cpp.o: ../inc/matrix3d.hh
 CMakeFiles/program.dir/src/scena.cpp.o: ../inc/prostopadloscian.hh
 CMakeFiles/program.dir/src/scena.cpp.o: ../inc/stozek.hh
 CMakeFiles/program.dir/src/scena.cpp.o: ../inc/vector.hh
@@ -74,6 +80,7 @@ CMakeFiles/program.dir/src/stozek.cpp.o: ../inc/Vector3d.hh
 CMakeFiles/program.dir/src/stozek.cpp.o: ../inc/brylageo.hh
 CMakeFiles/program.dir/src/stozek.cpp.o: ../inc/lacze_do_gnuplota.hh
 CMakeFiles/program.dir/src/stozek.cpp.o: ../inc/matrix.hh
+CMakeFiles/program.dir/src/stozek.cpp.o: ../inc/matrix3d.hh
 CMakeFiles/program.dir/src/stozek.cpp.o: ../inc/stozek.hh
 CMakeFiles/program.dir/src/stozek.cpp.o: ../inc/vector.hh
 CMakeFiles/program.dir/src/stozek.cpp.o: ../src/stozek.cpp
@@ -83,6 +90,7 @@ CMakeFiles/program.dir/src/wyzyna.cpp.o: ../inc/Vector3d.hh
 CMakeFiles/program.dir/src/wyzyna.cpp.o: ../inc/brylageo.hh
 CMakeFiles/program.dir/src/wyzyna.cpp.o: ../inc/lacze_do_gnuplota.hh
 CMakeFiles/program.dir/src/wyzyna.cpp.o: ../inc/matrix.hh
+CMakeFiles/program.dir/src/wyzyna.cpp.o: ../inc/matrix3d.hh
 CMakeFiles/program.dir/src/wyzyna.cpp.o: ../inc/vector.hh
 CMakeFiles/program.dir/src/wyzyna.cpp.o: ../inc/wyzyna.hh
 CMakeFiles/program.dir/src/wyzyna.cpp.o: ../src/wyzyna.cpp
