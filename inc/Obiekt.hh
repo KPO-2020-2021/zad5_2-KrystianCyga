@@ -1,8 +1,8 @@
 #pragma once
 
-#include "Vector3d.hh"
-#include "matrix.hh"
-#include "lacze_do_gnuplota.hh"
+#include "../inc/Vector3d.hh"
+#include "../inc/matrix.hh"
+#include "../inc/lacze_do_gnuplota.hh"
 
 /*!
  * \file

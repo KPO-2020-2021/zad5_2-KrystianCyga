@@ -1,10 +1,11 @@
 #pragma once
 
-#include "stozek.hh"
-#include "wyzyna.hh"
-#include "gran_bryla.hh"
-#include "dron.hh"
-#include "Obiekt.hh"
+#include "../inc/stozek.hh"
+#include "../inc/wyzyna.hh"
+#include "../inc/gran_bryla.hh"
+#include "../inc/dron.hh"
+#include "../inc/Obiekt.hh"
+#include "../inc/brylageo.hh"
 
 #include <string>
 #include <list>
@@ -55,12 +56,12 @@ public:
  * \retval true - gdy operacja powiedzie sie
  * \retval false - gdy operacja nie powiedzie sie
  */
-  bool Uzyj_drona(unsigned int numer_drona, double kat, unsigned int odleglosc, PzG::LaczeDoGNUPlota &Lacze);
+  bool Uzyj_drona( int numer_drona, double kat, unsigned int odleglosc, PzG::LaczeDoGNUPlota &Lacze);
   /*!
  * \brief Menu Programu
  *
- * \retval  0 - operacja powiodla sie
- * \retval  1 - koniec programu
+ * \retval int numer drona
+ * \retval  -1 - koniec programu
  */
   int  Menu(PzG::LaczeDoGNUPlota &Lacze);
   /*!

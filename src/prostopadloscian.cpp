@@ -1,7 +1,7 @@
 #include "../inc/prostopadloscian.hh"
 
-#define FOLDER_ROBOCZY "datasets/"
-#define WZORZEC_SZESCIAN "BrylyWzorcowe/szescian.dat"
+#define FOLDER_ROBOCZY "../datasets/"
+#define WZORZEC_SZESCIAN "../BrylyWzorcowe/szescian.dat"
 
 bool Prostopadloscian::ZbudujKorpus(double Kat_Obrotu, vector3d VekTrans)
 {

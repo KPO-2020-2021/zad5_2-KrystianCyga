@@ -4,7 +4,7 @@
 #include <list>
 #include <vector>
 #include <iostream>
-#include "brylageo.hh"
+#include "../inc/brylageo.hh"
 
 /*!
  * \file

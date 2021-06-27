@@ -1,6 +1,6 @@
 #pragma once
 
-#include "brylageo.hh"
+#include "../inc/brylageo.hh"
 
 /*!
  * \file

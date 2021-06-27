@@ -1,6 +1,6 @@
 #pragma once
 
-#include "matrix.hh"
+#include "../inc/matrix.hh"
 /*!
  * \file
  * \brief Ten plik zawiera definicję klasy macierz3d

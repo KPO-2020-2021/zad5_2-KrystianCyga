@@ -1,9 +1,9 @@
 #include "../inc/dron.hh"
 
-#define FOLDER_WLASCIWY "BrylyWzorcowe/"
-#define FOLDER_ROBOCZY "datasets/"
-#define WZORZEC_SZESCIAN "BrylyWzorcowe/szescian.dat"
-#define WZORZEC_ROTOR "BrylyWzorcowe/graniastoslup6.dat"
+#define FOLDER_WLASCIWY "../BrylyWzorcowe/"
+#define FOLDER_ROBOCZY "../datasets/"
+#define WZORZEC_SZESCIAN "../BrylyWzorcowe/szescian.dat"
+#define WZORZEC_ROTOR "../BrylyWzorcowe/graniastoslup6.dat"
 #define TRASA_PRZELOTU "../datasets/trasa_przelotu.dat"
 
 bool Dron::ZbudujDrona()
@@ -88,17 +88,19 @@ bool Dron::ZapiszTrase(int wysokosc, unsigned int odleglosc, double kat, PzG::La
   }
 
   vector3d end_Polozenie;
-  vector3d Polozenie = daj_polozenie();
+  vector3d Polozenie_kon;
+  Polozenie_kon = PolozenieD;
   double Kat_rad;
-  Kat_rad = kat * M_PI / 360;
+  Kat_rad = kat * M_PI / 180;
   end_Polozenie[0] += cos(Kat_rad) * odleglosc;
   end_Polozenie[1] += sin(Kat_rad) * odleglosc;
   end_Polozenie[2] = wysokosc;
-  end_Polozenie = end_Polozenie + daj_polozenie();
+  end_Polozenie = end_Polozenie + Polozenie_kon;
 
-  out << Polozenie << std::endl;
-  Polozenie[2] = wysokosc;
-  out << Polozenie << std::endl << end_Polozenie << std::endl;
+  out << Polozenie_kon << std::endl;
+  Polozenie_kon[2] = wysokosc;
+  out << Polozenie_kon << std::endl
+      << end_Polozenie << std::endl;
   end_Polozenie[2] = 0;
   out << end_Polozenie << std::endl;
 
@@ -106,19 +108,21 @@ bool Dron::ZapiszTrase(int wysokosc, unsigned int odleglosc, double kat, PzG::La
   return !out.fail();
 }
 
-bool Dron::LotDrona(double kat, int Wysokosc, int odleglosc, unsigned int numer_drona, PzG::LaczeDoGNUPlota &Lacze){
+bool Dron::LotDrona(double kat, int Wysokosc, int odleglosc, unsigned int numer_drona, PzG::LaczeDoGNUPlota &Lacze)
+{
   ZapiszTrase(Wysokosc, odleglosc, kat, Lacze);
   double pochylenie = 0;
 
-  std::cout << std::endl << "Wznoszenie Trwa... " << std::endl;
+  std::cout << std::endl
+            << "Wznoszenie Trwa... " << std::endl;
 
   Lacze.Rysuj();
-  usleep(1000000); 
+  usleep(1000000);
   for (; PolozenieD[2] <= Wysokosc; PolozenieD[2] += 2)
   {
     if (!owektor(numer_drona))
       return false;
-    usleep(50000); 
+    usleep(80000);
     Lacze.Rysuj();
   }
   PolozenieD[2] -= 2;
@@ -128,7 +132,7 @@ bool Dron::LotDrona(double kat, int Wysokosc, int odleglosc, unsigned int numer_
   {
     if (!owektor(numer_drona))
       return false;
-    usleep(50000);
+    usleep(80000);
     Lacze.Rysuj();
   }
 
@@ -146,7 +150,7 @@ bool Dron::LotDrona(double kat, int Wysokosc, int odleglosc, unsigned int numer_
       pochylenie -= 4;
     if (OdlegloscPrzebyta > 15 * odleglosc / 20)
       pochylenie -= 4;
-    usleep(50000);
+    usleep(80000);
     Lacze.Rysuj();
   }
   Popraw_Pozycje(KorekcjaPolozenia, KorekcjaKata, odleglosc);
@@ -166,17 +170,19 @@ bool Dron::LotDrona(double kat, int Wysokosc, int odleglosc, unsigned int numer_
   return true;
 }
 
-void Dron::LotDoPrzodu(double kat, double odleglosc){
+void Dron::LotDoPrzodu(double kat, double odleglosc)
+{
   double kat_rad;
-  kat_rad = kat*M_PI/360;
+  kat_rad = kat * M_PI / 180;
   PolozenieD[0] += cos(kat_rad) * odleglosc;
   PolozenieD[1] += sin(kat_rad) * odleglosc;
 }
 
-void Dron::Popraw_Pozycje(vector3d VekTrans, double kat, double odleglosc){
+void Dron::Popraw_Pozycje(vector3d VekTrans, double kat, double odleglosc)
+{
   double kat_rad;
   PolozenieD = VekTrans;
-  kat_rad = kat*M_PI/360;
+  kat_rad = kat * M_PI / 180;
   PolozenieD[0] += cos(kat_rad) * odleglosc;
   PolozenieD[1] += sin(kat_rad) * odleglosc;
 }

@@ -1,8 +1,8 @@
 #include "../inc/gran_bryla.hh"
 
-#define WZORZEC_STOZEK "BrylyWzorcowe/szescianUP.dat"
-#define WZORZEC_SZESCIAN "BrylyWzorcowe/szescian.dat"
-#define FOLDER_ROBOCZY "datasets/"
+#define WZORZEC_STOZEK "../BrylyWzorcowe/szescianUP.dat"
+#define WZORZEC_SZESCIAN "../BrylyWzorcowe/szescian.dat"
+#define FOLDER_ROBOCZY "../datasets/"
 
 
 void gran_bryla::InfoObiektu()
@@ -13,17 +13,17 @@ void gran_bryla::InfoObiektu()
 bool gran_bryla::Tworz_gran_bryla(){
 
   std::string PlikWyjsciowy;
-  PlikWyjsciowy = "bryly_wlasciwe/gran_bryla_" + std::to_string(NumerBryly) + ".dat";
+  PlikWyjsciowy = "../BrylyWzorcowe/gran_bryla_" + std::to_string(NumerBryly) + ".dat";
   pobierz_nazwe_final(PlikWyjsciowy);
   pobierz_nazwe_wzorca(WZORZEC_STOZEK);
-  std::ifstream IN(dajNazweWzorcowego());
-  std::ofstream OUT(dajNazweWyjsciowego());
+  std::ifstream IN(daj_wzorcowego());
+  std::ofstream OUT(daj_wyjsciowego());
   vector3d PomVek;
 
   if (!IN.is_open())
   {
     std::cerr << std::endl
-         << " Blad otwarcia do odczytu pliku: " << dajNazweWzorcowego() << std::endl
+         << " Blad otwarcia do odczytu pliku: " << daj_wzorcowego() << std::endl
          << std::endl;
     return false;
   }
@@ -31,7 +31,7 @@ bool gran_bryla::Tworz_gran_bryla(){
   if (!OUT.is_open())
   {
     std::cerr << std::endl
-         << " Blad otwarcia do odczytu pliku: " << dajNazweWyjsciowego() << std::endl
+         << " Blad otwarcia do odczytu pliku: " << daj_wyjsciowego() << std::endl
          << std::endl;
     return false;
   }

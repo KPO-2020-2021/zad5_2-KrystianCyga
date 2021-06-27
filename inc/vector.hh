@@ -229,10 +229,16 @@ double &Vector<SIZE>::operator[](int index) {
 
 template <int SIZE>
 std::ostream &operator << (std::ostream &out, Vector<SIZE> const &tmp) {
-    for (int i = 0; i < SIZE; ++i) {
-        out << "[ " << tmp[i] << " ]\n";
+  for (int index = 0; index < SIZE; index++)
+  {
+    out << tmp[index] << " ";
+    if (index == SIZE)
+    {
+      out << tmp[index] << std::endl;
+      return out;
     }
-    return out;
+  }
+  return out;
 }
 
 

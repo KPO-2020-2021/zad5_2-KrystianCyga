@@ -14,21 +14,33 @@
 
 #include "exampleConfig.h"
 #include "example.h"
-#include "vector.hh"
-#include "matrix.hh"
+#include "../inc/Vector3d.hh"
+#include "../inc/matrix3d.hh"
 #include "../inc/lacze_do_gnuplota.hh"
+#include "../inc/Scena.hh"
 
-/*!
- * Simple main program that demontrates how access
- * CMake definitions (here the version number) from source code.
- * 
- * EDIT: dodane kreowanie wektorow i macierzy plus obsluga lacza do gnuplota
- */
-
-#define DL_KROTKI_BOK  100
-#define DL_DLUGI_BOK   150
 
 int main(){
-return 0;
+  {
+    PzG::LaczeDoGNUPlota Lacze;
+    Scena Scena;
+    Lacze.ZmienTrybRys(PzG::TR_3D);
+    Lacze.Inicjalizuj(); // Tutaj startuje gnuplot.
+
+    Lacze.UstawZakresX(0, 140);
+    Lacze.UstawZakresY(0, 140);
+    Lacze.UstawZakresZ(0, 120);
+
+    Lacze.UstawRotacjeXZ(64, 65); // Tutaj ustawiany jest widok
+    bool ok;
+    do
+    {
+        ok =Scena.wybierz_drona(Scena.Menu(Lacze), Lacze);
+    }
+    while ( ok != false);
+  }
+    std::cout << "Aktywne wektory: " << vector3d::daj_aktywne() << std::endl;
+    std::cout << "Powstałe wektory: " << vector3d::daj_powstale() << std::endl;
+  return 0;
 }
 

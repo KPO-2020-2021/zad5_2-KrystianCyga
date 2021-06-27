@@ -1,10 +1,19 @@
 #pragma once
 
-#include "Vector3d.hh"
-#include "matrix.hh"
-#include "Obiekt.hh"
-#include "lacze_do_gnuplota.hh"
+#include "../inc/Vector3d.hh"
+#include "../inc/matrix3d.hh"
+#include "../inc/Obiekt.hh"
+#include "../inc/lacze_do_gnuplota.hh"
+#include <string>
+#include <list>
+#include <vector>
+#include <iostream>
+#include <cmath>
 #include <fstream>
+#include <iomanip>
+#include <cmath>
+#include <cassert>
+#include <unistd.h>
 
 
 class brylageo: public Obiekt
@@ -52,7 +61,7 @@ void skaluj(vector3d &skala);
  *                                                                        
  *     \post Zmiana NazwaPlikubryluWzorc na ta podana przez uzytkownika                                
  */
-void pobierz_nazwe_wzorca(const std::string &nazwa1);
+void pobierz_nazwe_wzorca(const std::string nazwa1);
 /*!
  *  \brief Metoda zapisujaca nazwe pliku finalnej bryly                                            
  *                                                                    
@@ -60,7 +69,7 @@ void pobierz_nazwe_wzorca(const std::string &nazwa1);
  *                                                                        
  *     \post Zmiana NazwaPlikubryluWzorc na ta podana przez uzytkownika                                
  */
-void pobierz_nazwe_final(const std::string &nazwa2);
+void pobierz_nazwe_final(const std::string nazwa2);
 /*!
  * \brief  Wczytuje bryle z pliku wzorcowego
  *  Po wczytaniu dokonuje potrzebnej transformacji i skalowania
@@ -92,12 +101,6 @@ void ObrocWzgledemOsiOZ(double KatObrotu_st, vector3d &Polozenie);
  */
 void TransformujWspolrzednePunktu(vector3d &Polozenie);
 /*!
- * \brief Skaluje wektor
- *
- * \param[in] Polozenie - wektor polozenia
- */
-void Skaluj(vector3d &Polozenie);
-/*!
  *  \brief Metoda ustawiajaca kat orientacji                                           
  *  \param[in] kat kat orientacji                                                                                              
  */
@@ -112,4 +115,7 @@ void ustaw_trans(vector3d Polozenie){trans=Polozenie;};
  *     \return wektor translacji                                                                                              
  */
 vector3d daj_trans(){return trans;}
+
+std::string daj_wzorcowego(){return NazwaWzorcowego;}
+std::string daj_wyjsciowego(){return NazwaWyjsciowego;}
 };

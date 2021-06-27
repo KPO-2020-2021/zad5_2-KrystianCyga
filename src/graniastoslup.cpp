@@ -1,7 +1,7 @@
 #include "../inc/graniastoslup.hh"
 
-#define WZORZEC_ROTOR "BrylyWzorcowe/graniastoslup6.dat"
-#define FOLDER_ROBOCZY "datasets/"
+#define WZORZEC_ROTOR "../BrylyWzorcowe/graniastoslup6.dat"
+#define FOLDER_ROBOCZY "../datasets/"
 
 bool graniastoslup::ZbudujRotor(unsigned int Numer_Rotora, double Kat_Obrotu, vector3d VekTrans)
 {

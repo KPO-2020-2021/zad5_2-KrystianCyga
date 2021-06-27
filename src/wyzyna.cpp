@@ -1,7 +1,7 @@
 #include "../inc/wyzyna.hh"
 
-#define WZORZEC_STOZEK "BrylyWzorcowe/szescianUP.dat"
-#define FOLDER_ROBOCZY "datasets/"
+#define WZORZEC_STOZEK "../BrylyWzorcowe/szescianUP.dat"
+#define FOLDER_ROBOCZY "../datasets/"
 
 
 void wyzyna::InfoObiektu()
@@ -12,17 +12,17 @@ std::cout << "Pozycja wyzyny: " << daj_trans() << std::endl;
 bool wyzyna::ZbudujWyzyne(){
   
   std::string PlikWyjsciowy;
-  PlikWyjsciowy = "bryly_wlasciwe/Wyzyna_" + std::to_string(NumerBryly) + ".dat";
+  PlikWyjsciowy = "../BrylyWzorcowe/Wyzyna_" + std::to_string(NumerBryly) + ".dat";
   pobierz_nazwe_final(PlikWyjsciowy);
   pobierz_nazwe_wzorca(WZORZEC_STOZEK);
-  std::ifstream IN(dajNazweWzorcowego());
-  std::ofstream OUT(dajNazweWyjsciowego());
+  std::ifstream IN(daj_wzorcowego());
+  std::ofstream OUT(daj_wyjsciowego());
   vector3d PomVek;
 
   if (!IN.is_open())
   {
     std::cerr << std::endl
-         << " Blad otwarcia do odczytu pliku: " << dajNazweWzorcowego() << std::endl
+         << " Blad otwarcia do odczytu pliku: " << daj_wzorcowego() << std::endl
          << std::endl;
     return false;
   }
@@ -30,7 +30,7 @@ bool wyzyna::ZbudujWyzyne(){
   if (!OUT.is_open())
   {
     std::cerr << std::endl
-         << " Blad otwarcia do odczytu pliku: " << dajNazweWyjsciowego() << std::endl
+         << " Blad otwarcia do odczytu pliku: " << daj_wyjsciowego() << std::endl
          << std::endl;
     return false;
   }

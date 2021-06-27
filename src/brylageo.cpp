@@ -1,9 +1,9 @@
 #include "../inc/brylageo.hh"
 
-#define FOLDER_WLASCIWY "BrylyWzorcowe/"
-#define FOLDER_ROBOCZY "datasets/"
-#define WZORZEC_SZESCIAN "BrylyWzorcowe/szescian.dat"
-#define WZORZEC_ROTOR "BrylyWzorcowe/graniastoslup6.dat"
+#define FOLDER_WLASCIWY "../BrylyWzorcowe/"
+#define FOLDER_ROBOCZY "../datasets/"
+#define WZORZEC_SZESCIAN "../BrylyWzorcowe/szescian.dat"
+#define WZORZEC_ROTOR "../BrylyWzorcowe/graniastoslup6.dat"
 
 #include <fstream>
 
@@ -21,11 +21,11 @@ brylageo::brylageo(vector3d polozenie, double kat, const vector3d skala2)
     Orientacji_stopnie = kat;
 }
 
-void brylageo::pobierz_nazwe_wzorca(const std::string &nazwa1){
+void brylageo::pobierz_nazwe_wzorca(const std::string nazwa1){
     NazwaWzorcowego=nazwa1;
 }
 
-void brylageo::pobierz_nazwe_final(const std::string &nazwa2){
+void brylageo::pobierz_nazwe_final(const std::string nazwa2){
     NazwaWyjsciowego=nazwa2;
 }
 
@@ -72,8 +72,7 @@ bool brylageo::wczytajbryle()
     long unsigned int index = 0;
     wierzcholki.reserve(17);
 
-    for (unsigned int nrWierz = 0; nrWierz < NumerWierzcholka;
-         ++nrWierz)
+    for (unsigned int nrWierz = 0; nrWierz < NumerWierzcholka;++nrWierz)
     {
         Plik_BrylaWzorcowa >> PoTrans;
 

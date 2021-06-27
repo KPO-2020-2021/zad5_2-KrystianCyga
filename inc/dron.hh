@@ -1,11 +1,14 @@
 #pragma once
 
-#include "graniastoslup.hh"
-#include "prostopadloscian.hh"
-#include "lacze_do_gnuplota.hh"
-#include "Obiekt.hh"
-#include "brylageo.hh"
+#include "../inc/graniastoslup.hh"
+#include "../inc/prostopadloscian.hh"
+#include "../inc/lacze_do_gnuplota.hh"
+#include "../inc/Obiekt.hh"
+#include "../inc/brylageo.hh"
 #include <string>
+#include <list>
+#include <vector>
+#include <iostream>
 
 /*!
  * \file
